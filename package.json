@@ -1,0 +1,34 @@
+{
+  "name": "pixi",
+  "version": "3.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "@types/pixi.js": "^4.8.6",
+    "npm": "^6.8.0",
+    "pixi.js": "^4.8.5",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.2",
+    "webpack-cli": "^3.2.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developer-honcharenko/Pixi-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/developer-honcharenko/Pixi-App/issues"
+  },
+  "homepage": "https://github.com/developer-honcharenko/Pixi-App#readme",
+  "devDependencies": {
+    "webpack": "^4.29.4",
+    "webpack-dev-middleware": "^3.5.2",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-hot-middleware": "^2.24.3"
+  }
+}

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+body {
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.navbar {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    min-width: 100%;
+    z-index: 5;
+    padding: 15px 30px;
+    background: #061639;
+    box-sizing: border-box;
+}
+
+.navbar > div {
+    display: inline-block;
+}
+.navbar div{
+    color: white;
+}
+
+.shapes_per_sec, .gravity_value {
+    display: inline-block;
+    width: 49%;
+    font-size: 0;
+}
+.gravity_value {
+    text-align: right;
+}
+.shapes_per_sec > div, .gravity_value div {
+    padding: 5px 15px;
+    font-size: 30px;
+    display: inline-block;
+    width: 60px;
+    border: 1px solid white;
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.shapes_per_sec > div:focus , .gravity_value div:focus {
+    background: white;
+}
+
+
+.shapes_per_sec > div:nth-of-type(1) {
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+.shapes_per_sec > div:nth-of-type(2) {
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.shapes_per_sec span {
+    font-size: 15px;
+    display: inline-block;
+    width: 120px;
+    border: 1px solid white;
+    margin-left: 10px;
+    vertical-align: middle;
+    height: 40px;
+    border-radius: 10px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.gravity_value > div:nth-of-type(1) {
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+
+}
+.gravity_value > div:nth-of-type(2) {
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.gravity_value span {
+    font-size: 15px;
+    display: inline-block;
+    width: 140px;
+    border: 1px solid white;
+    margin-right: 10px;
+    vertical-align: middle;
+    height: 40px;
+    border-radius: 10px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("../../preloader.gif") center center no-repeat;
+    background-size: cover ;
+    transition-duration: 0.3s;
+}
+.preloader.hidden {
+    left: -100%;
+    opacity: 0;
+    display: none;
+    transition-duration: 0.3s;
+}
+
+
+
+
+.top_navbar {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    background: #061639;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+.top_navbar > div {
+    position: absolute;
+    padding: 0 15px;
+    font-size: 20px;
+    color: white;
+    line-height: 45px;
+}
+
+.currentShapes {
+    left: 0;
+}
+.score {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.shapesArea {
+    right: 0;
+}
+
