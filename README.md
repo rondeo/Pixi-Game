@@ -9,7 +9,7 @@ npm i
 npm run start
 ```
 
-##Versionality
+## Versionality
 - node v8.9.0
 - webpack v4.29.4
 - ts v3.3.3
